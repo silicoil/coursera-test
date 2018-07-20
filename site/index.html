@@ -1,10 +1,129 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Hello Coursera</title>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bistro Tezo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 </head>
 <body>
-<h1>Hello Coursera! it is a great course!</h1>
-<h2>Hello Coursera! it is a great course!</h2>
+	<header>
+    <nav id="header-nav" id="navbar navbar-default">
+      <div  class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>Bistro Tezo</h1></a>
+            <p id="navbar-brand">
+              <!-- <img src="images/star-k-logo.png" alt="Kosher certification"> -->
+              <a href="#">Tezo Certified</a>
+            </p>
+          </div>
+
+<!-- taking care of collapsable menu button:check getbootstrap.com navbar -->
+
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	        </div>
+
+
+	        <div id="collapsable-nav" class="collapse navbar-collapse">
+	           <ul id="nav-list" class="nav navbar-nav navbar-right">
+	            <li>
+	              <a href="menu-categories.html">
+	                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+	            </li>
+	            <li>
+	              <a href="#">
+	                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+	            </li>
+	            <li>
+	              <a href="#">
+	                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+	            </li>
+	            <li id="phone" class="hidden-xs">
+	              <a href="tel:410-602-5008">
+	                <span>410-602-5008</span></a>
+	                <div>* Tezo delivers</div>
+	            </li>
+	          </ul><!-- #nav-list -->
+			</div> <!-- .collapse .navbar-collapse -->
+		</div>
+		</nav>
+	</header>
+<!-- End of Header -->
+
+<!-- BEGINNING OF BODY -->
+
+<!-- Beginning of Jumbotron -->
+<div id="main-content" class="container"> 
+	<div class="jumbotron">
+		<img src="images/jumbotron_T768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs"> <!-- mobile first design, img-responsive... -->
+		<div id="mainpage-logo" class="invisible-xs">The Bistro Tezo</div>
+		<div id="mainpage-time" class="invisible-xs"><span>Open 11.30AM-9PM</span></div>
+	</div>
+<!-- End of Jumbotron -->
+<div id="home-tiles" class="row">
+	<div class="col-md-4 col-sm-6 col-xs-12">
+		<a href="menu-categories.html"><div id=menu-tile><span>menu</span></div></a>		
+	</div>
+	<div class="col-md-4 col-sm-6 col-xs-12">
+		<a href="single-category.html">
+			<div id="specials-tile"><span>drinks</span>
+			</div>
+		</a>
+	</div>
+	<div class="col-md-4 col-sm-12 col-xs-12">
+		<a href="https://goo.gl/maps/J4W79fevgQE2" target="_blank">
+			<div id="map-tile">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10865.098007215856!2d15.552895239321776!3d47.093689116462194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476e4bfe44720af1%3A0xf94fc95c5553f1ca!2s8301+H%C3%B6nigtal!5e0!3m2!1sen!2sat!4v1532079592280" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<span>map</span>
+			</div>
+		</a>
+	</div>
+</div>
+
+<!-- Footer -->
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <section id="hours" class="col-sm-4">
+          <span>Hours:</span><br>
+          Mon-Fri: 11:30am - 9:00pm<br>
+          Sat: 11:00am - 2:30pm<br>
+          Sunday Closed
+          <hr class="visible-xs">
+        </section>
+        <section id="address" class="col-sm-4">
+          <span>Address:</span><br>
+          Honigtal<br>
+          Graz, Austria
+          <p>* Delivery by Tezo. Tezo cuddles required.</p>
+          <hr class="visible-xs">
+        </section>
+        <section id="testimonials" class="col-sm-4">
+          <p>"The best Austrian restaurant I've been to! And Tezi is so cute!!"</p>
+          <p>"Amazing food! Great service from Tezo!!"</p>
+        </section>
+      </div>
+      <div class="text-center">&copy; Copyright Bistro Tezo 2018</div>
+    </div>
+  </footer>
+
+</div>
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
