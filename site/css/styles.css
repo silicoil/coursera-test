@@ -116,7 +116,7 @@ body {
 .container .jumbotron {
   border-radius: 2px; /*bootstrap border radius is set 6px*/
   margin-top: 200px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   position: relative;
 }
 
@@ -140,7 +140,7 @@ body {
 #menu-tile, #specials-tile, #map-tile {
   height: 250px;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   position: relative;
   /*border: 2px solid #3F0C1F;*/
   overflow: hidden;
@@ -219,6 +219,7 @@ body {
   .container .jumbotron{
     background: url('../images/jumbotron_T992.jpg') no-repeat;
     height: 558px;
+    margin-top: 130px;
   }
   #mainpage-logo {
     font-size: 4em;
@@ -236,7 +237,7 @@ body {
   .container .jumbotron{
     background: url('../images/jumbotron_T768.jpg') no-repeat;
     height: 432px;
-
+    margin-top: 130px
   }
 
   #mainpage-logo {
