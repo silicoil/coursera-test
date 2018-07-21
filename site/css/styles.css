@@ -5,21 +5,22 @@ body {
   font-family: 'Oxygen' sans-serif;
 }
 
-#navbar-fixed {
+/*For fixed navigation bar, position is fixed to the top...*/
+/*#navbar-fixed {
     position: fixed;
     top: 0;
     width: 100%;
     overflow: hidden;
     transition: top 0.3s; 
 }
-
+*/
 #header-nav {
   background-color: #cddc39;
   /*#cddc39; lime #3a3a3a dark grey light green: 8bc34a*/
   border-radius:0;
   border:0;
   margin-bottom: 40px;
-  position: fixed;
+  position: fixed; /*For fixed navigation bar, position is fixed to the top...*/
   width: 100%;
   z-index: 1;
 }
@@ -71,6 +72,7 @@ body {
 }
 #nav-list {
   margin-top: 15px;
+  margin-bottom: -1px;
 }
 #nav-list a {
   color: #f1f1f1;
@@ -111,7 +113,40 @@ body {
 }
 
 /*END HEADER*/
+.panel-footer {
+  margin-bottom: 35px;
+  padding: 35px 0px 30px 0px;
+  background-color: #3a3a3a;  
+  color: #fdf5e6;
+}
+.panel-footer .container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
 
+#hours,#address {
+  line-height: 1.7;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+
+#address p {
+  font-size: .7em;
+  font-style: italic;
+  line-height: 1.6;
+  opacity: .7
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/*END FOOTER*/
 /*START HOME PAGE*/
 .container .jumbotron {
   border-radius: 2px; /*bootstrap border radius is set 6px*/
@@ -232,6 +267,13 @@ body {
 /*Small devices only*/
 @media (min-width: 768px) and (max-width: 991px) {
 
+/*Header*/
+#nav-list a span {
+  font-size: 1em;
+}
+#phone a {
+  font-size: 1em;
+}
 
 /*Body*/
   .container .jumbotron{
@@ -260,11 +302,14 @@ body {
 
 /*Extra small devices only*/
 @media (max-width: 767px) {
-  .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-    
-    border: 1px #8bc34a;
+  .navbar-header button.navbar-toggle {
+    border: 2px #000;
     background-color: #fdf5e6;
   }
+  .navbar-header .icon-bar {
+    background-color: #cddc39;
+  }
+
   .navbar-brand {
     padding-top: 10px;
     height: 80px;
@@ -276,7 +321,7 @@ body {
   }
   .navbar-brand p {
     font-size: .6em;
-    margin-top: 5px;
+    margin-top: 1px;
   }
   .navbar-brand p img {
     height: 20px;
@@ -291,6 +336,20 @@ body {
     margin-right: 5px;
   }
 
+/*END Header*/
+
+/*Footer*/
+ .panel-footer section {
+  margin-bottom: 30px;
+  text-align: center;
+ }
+ .panel-footer section:nth-child(3){
+  margin-bottom: 0; /*margin already exists on the whole row*/
+ }
+ .panel-footer section hr {
+  width: 70%;
+ }
+/*Home page*/
   .container .jumbotron{
     /*margin-top: 20px;*/
     padding: 0;
